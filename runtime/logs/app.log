@@ -1,0 +1,1205 @@
+2016-12-26 13:42:50 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Invalid layout type: form-horizontal' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2-bootstrap\ActiveForm.php:92
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Object.php(107): yii\bootstrap\ActiveForm->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\bootstrap\\A...', Array, Array)
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\bootstrap\\A...', Array, Array)
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Widget.php(59): yii\BaseYii::createObject(Array)
+#6 E:\yii-basic-app-2.0.10\basic\views\permission\create.php(22): yii\base\Widget::begin(Array)
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(326): require('E:\\yii-basic-ap...')
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('E:\\yii-basic-ap...', Array)
+#9 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('E:\\yii-basic-ap...', Array, Object(app\controllers\PermissionController))
+#10 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(409): yii\base\View->render('create', Array, Object(app\controllers\PermissionController))
+#11 E:\yii-basic-app-2.0.10\basic\controllers\PermissionController.php(12): yii\base\Controller->renderPartial('create')
+#12 [internal function]: app\controllers\PermissionController->actionCreate()
+#13 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#15 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#16 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('permission/crea...', Array)
+#17 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#19 {main}
+2016-12-26 13:42:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'permission/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/?'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '57572'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=permission%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=permission%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482756170.726
+    'REQUEST_TIME' => 1482756170
+]
+2016-12-26 13:43:24 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('permission/crea...', Array)
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-12-26 13:43:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'permission/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www-release.bbgpoint.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/?'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '57595'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=permission%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=permission%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482756204.358
+    'REQUEST_TIME' => 1482756204
+]
+2016-12-26 13:45:03 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('permission/crea...', Array)
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-12-26 13:45:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'permission/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www-release.bbgpoint.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/?'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '57637'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=permission%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=permission%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482756303.59
+    'REQUEST_TIME' => 1482756303
+]
+2016-12-26 13:45:05 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('permission/crea...', Array)
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-12-26 13:45:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'permission/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www-release.bbgpoint.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/?'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '57650'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=permission%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=permission%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482756305.902
+    'REQUEST_TIME' => 1482756305
+]
+2016-12-26 13:50:43 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('permission/crea...', Array)
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-12-26 13:50:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'permission/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www-release.bbgpoint.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/?'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '57805'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=permission%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=permission%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482756643.052
+    'REQUEST_TIME' => 1482756643
+]
+2016-12-26 14:03:02 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\controllers\PermissionController.php(13): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(152): app\controllers\PermissionController->beforeAction(Object(yii\base\InlineAction))
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('permission/crea...', Array)
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2016-12-26 14:03:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'permission/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www-release.bbgpoint.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '58241'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=permission%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=permission%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482757382.394
+    'REQUEST_TIME' => 1482757382
+]
+2016-12-26 14:03:09 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\controllers\PermissionController.php(13): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(152): app\controllers\PermissionController->beforeAction(Object(yii\base\InlineAction))
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('permission/crea...', Array)
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2016-12-26 14:03:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'permission/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www-release.bbgpoint.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '58242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=permission%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=permission%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482757389.442
+    'REQUEST_TIME' => 1482757389
+]
+2016-12-27 07:42:03 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: E:\yii-basic-app-2.0.10\basic\views\role\index.php' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('E:\\yii-basic-ap...', Array, Object(app\controllers\RoleController))
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(409): yii\base\View->render('index', Array, Object(app\controllers\RoleController))
+#2 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(12): yii\base\Controller->renderPartial('index')
+#3 [internal function]: app\controllers\RoleController->actionIndex()
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('role/index', Array)
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-27 07:42:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/index'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '50263'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex'
+    'REQUEST_URI' => '/index.php?r=role%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482820922.963
+    'REQUEST_TIME' => 1482820922
+]
+2016-12-27 07:54:46 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'ActiveDataProvider' not found' in E:\yii-basic-app-2.0.10\basic\views\role\index.php:3
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile()
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile()
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render()
+#3 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(14): yii\base\Controller->render()
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\RoleController->actionIndex()
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#9 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2016-12-27 07:54:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/index'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '50836'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex'
+    'REQUEST_URI' => '/index.php?r=role%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482821686.665
+    'REQUEST_TIME' => 1482821686
+]
+2016-12-27 07:56:21 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Permission::name' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('name')
+#1 E:\yii-basic-app-2.0.10\basic\views\role\index.php(25): yii\db\BaseActiveRecord->__get('name')
+#2 [internal function]: yii\base\View->{closure}(Object(app\models\Permission), 1, 0, Object(yii\grid\DataColumn))
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\DataColumn.php(211): call_user_func(Object(Closure), Object(app\models\Permission), 1, 0, Object(yii\grid\DataColumn))
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\DataColumn.php(225): yii\grid\DataColumn->getDataCellValue(Object(app\models\Permission), 1, 0)
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Permission), 1, 0)
+#6 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(app\models\Permission), 1, 0)
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(app\models\Permission), 1, 0)
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Widget.php(102): yii\grid\GridView->run()
+#16 E:\yii-basic-app-2.0.10\basic\views\role\index.php(29): yii\base\Widget::widget(Array)
+#17 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(326): require('E:\\yii-basic-ap...')
+#18 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('E:\\yii-basic-ap...', Array)
+#19 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('E:\\yii-basic-ap...', Array, Object(app\controllers\RoleController))
+#20 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\RoleController))
+#21 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(14): yii\base\Controller->render('index')
+#22 [internal function]: app\controllers\RoleController->actionIndex()
+#23 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#25 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#26 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('role/index', Array)
+#27 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2016-12-27 07:56:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/index'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '50897'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex'
+    'REQUEST_URI' => '/index.php?r=role%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482821780.838
+    'REQUEST_TIME' => 1482821780
+]
+2016-12-27 08:35:44 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Html' not found' in E:\yii-basic-app-2.0.10\basic\views\role\index.php:34
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\ActionColumn.php(216): ::call_user_func:{E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\ActionColumn.php:216}()
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\ActionColumn.php(220): yii\grid\ActionColumn->yii\grid\{closure}()
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\ActionColumn.php(220): ::preg_replace_callback()
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\ActionColumn->renderDataCellContent()
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell()
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow()
+#6 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection()
+#9 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection()
+#10 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\BaseListView.php(129): yii\widgets\BaseListView->yii\widgets\{closure}()
+#11 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\BaseListView.php(129): ::preg_replace_callback()
+#12 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#13 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Widget.php(102): yii\grid\GridView->run()
+#14 E:\yii-basic-app-2.0.10\basic\views\role\index.php(43): yii\base\Widget::widget()
+#15 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(326): ::unknown()
+#16 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile()
+#17 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile()
+#18 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render()
+#19 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(14): yii\base\Controller->render()
+#20 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\RoleController->actionIndex()
+#21 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#22 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#23 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#24 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#25 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#26 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#27 {main}
+2016-12-27 08:35:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/index'
+    'sort' => 'id'
+    'page' => '9'
+    'per-page' => '2'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex&sort=id'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '52428'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex&sort=id&page=9&per-page=2'
+    'REQUEST_URI' => '/index.php?r=role%2Findex&sort=id&page=9&per-page=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482824144.008
+    'REQUEST_TIME' => 1482824144
+]
+2016-12-27 08:39:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: role/del' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('del', Array)
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('role/del', Array)
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-27 08:39:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/del'
+    'id' => '18'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex&sort=id&page=9&per-page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '52576'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Fdel&id=18'
+    'REQUEST_URI' => '/index.php?r=role%2Fdel&id=18'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482824367.216
+    'REQUEST_TIME' => 1482824367
+]
+2016-12-27 08:41:23 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: role/del' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('del', Array)
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('role/del', Array)
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-12-27 08:41:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/del'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex&sort=id&page=9&per-page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '52655'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Fdel&id=17'
+    'REQUEST_URI' => '/index.php?r=role%2Fdel&id=17'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482824483.216
+    'REQUEST_TIME' => 1482824483
+]
+2016-12-27 08:42:25 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')'' in E:\yii-basic-app-2.0.10\basic\views\role\index.php:35
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile()
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render()
+#2 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(14): yii\base\Controller->render()
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\RoleController->actionIndex()
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#6 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#9 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2016-12-27 08:42:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/index'
+    'sort' => 'id'
+    'page' => '9'
+    'per-page' => '2'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex&sort=id'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '52682'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex&sort=id&page=9&per-page=2'
+    'REQUEST_URI' => '/index.php?r=role%2Findex&sort=id&page=9&per-page=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482824545.139
+    'REQUEST_TIME' => 1482824545
+]
+2016-12-27 09:50:38 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Permission::actionNae' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('actionNae')
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('actionNae')
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\helpers\BaseHtml.php(1663): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Permission), 'actionNae')
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\helpers\BaseHtml.php(1601): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(app\models\Permission), 'actionNae', Array, Array)
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\widgets\ActiveField.php(645): yii\helpers\BaseHtml::activeCheckboxList(Object(app\models\Permission), 'actionNae', Array, Array)
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2-bootstrap\ActiveField.php(264): yii\widgets\ActiveField->checkboxList(Array, Array)
+#6 E:\yii-basic-app-2.0.10\basic\views\role\create.php(25): yii\bootstrap\ActiveField->checkboxList(Array)
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(326): require('E:\\yii-basic-ap...')
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('E:\\yii-basic-ap...', Array)
+#9 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('E:\\yii-basic-ap...', Array, Object(app\controllers\RoleController))
+#10 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(409): yii\base\View->render('create', Array, Object(app\controllers\RoleController))
+#11 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(27): yii\base\Controller->renderPartial('create', Array)
+#12 [internal function]: app\controllers\RoleController->actionCreate()
+#13 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#15 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#16 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('role/create', Array)
+#17 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#19 {main}
+2016-12-27 09:50:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/create'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '55018'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=role%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482828638.335
+    'REQUEST_TIME' => 1482828638
+]
+2016-12-27 11:49:25 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'ActiveForm' not found' in E:\yii-basic-app-2.0.10\basic\views\role\index.php:6
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile()
+#1 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile()
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render()
+#3 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(14): yii\base\Controller->render()
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\RoleController->actionIndex()
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#9 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2016-12-27 11:49:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/index'
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '55775'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex'
+    'REQUEST_URI' => '/index.php?r=role%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482835764.822
+    'REQUEST_TIME' => 1482835764
+]
+2016-12-27 12:15:39 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Permission::acitonName' in E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('acitonName')
+#1 E:\yii-basic-app-2.0.10\basic\views\role\index.php(40): yii\db\BaseActiveRecord->__get('acitonName')
+#2 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(326): require('E:\\yii-basic-ap...')
+#3 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('E:\\yii-basic-ap...', Array)
+#4 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('E:\\yii-basic-ap...', Array, Object(app\controllers\RoleController))
+#5 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\RoleController))
+#6 E:\yii-basic-app-2.0.10\basic\controllers\RoleController.php(21): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\RoleController->actionIndex()
+#8 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#11 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('role/index', Array)
+#12 E:\yii-basic-app-2.0.10\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\yii-basic-app-2.0.10\basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2016-12-27 12:15:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'role/index'
+    'Permission' => [
+        'actionName' => 'dafdfasd'
+    ]
+]
+
+$_COOKIE = [
+    'boyo_token' => 'b4165e3f03d13da36a589a77dd35bea9166f7394a:4:{i:0;s:1:\"3\";i:1;s:1:\"3\";i:2;i:2592000;i:3;a:0:{}}'
+    'bbgpoint' => '3_admin_c11a761c374f42862dacaf3f5084ce00'
+    '__utma' => '9930726.1244005575.1481524178.1481608476.1481858429.3'
+    '__utmz' => '9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_ga' => 'GA1.2.1244005575.1481524178'
+    'PHPSESSID' => 'jj2jtmjnq0etuc25pk7gn2gen6'
+    '_csrf' => '97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www-release.bbgpoint.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www-release.bbgpoint.com/index.php?r=role%2Findex&Permission%5BactionName%5D=dafdfasd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,zh-CN;q=0.8,zh;q=0.6'
+    'HTTP_COOKIE' => 'boyo_token=b4165e3f03d13da36a589a77dd35bea9166f7394a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%223%22%3Bi%3A1%3Bs%3A1%3A%223%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; bbgpoint=3_admin_c11a761c374f42862dacaf3f5084ce00; __utma=9930726.1244005575.1481524178.1481608476.1481858429.3; __utmz=9930726.1481524191.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1244005575.1481524178; PHPSESSID=jj2jtmjnq0etuc25pk7gn2gen6; _csrf=97e1444302d46eb0efa15656b9b165c47ab24b94550a96de38fb44c3ac431a05a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mMwY1GP-BLgZi5HrYUZ9Ks3y2hjqT0SO%22%3B%7D'
+    'PATH' => 'C:\\android-sdk-windows\\platform-tools;C:\\android-sdk-windows\\tools;C:\\Program Files\\Java\\jdk1.8.0\\jre\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\TortoiseSVN\\bin;C:\\apache-ant-1.9.4\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at www-release.bbgpoint.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'www-release.bbgpoint.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yii-basic-app-2.0.10/basic/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'E:/yii-basic-app-2.0.10/basic/web/index.php'
+    'REMOTE_PORT' => '56814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex&Permission%5BactionName%5D=dafdfasd'
+    'REQUEST_URI' => '/index.php?r=role%2Findex&Permission%5BactionName%5D=dafdfasd'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1482837339.22
+    'REQUEST_TIME' => 1482837339
+]
